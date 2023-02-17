@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css" type="text/css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="_wrapper">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="img-reg/logo.png" height="80px"  />
+                </a>
+            </div>
+            <div>
+                <button style="width: auto; font-size: 14px;" href="reg_page/index.html" type="button" id="reg-btn" class="btn">Регистрация</button>
+                <form action="../aut_page/index.html">
+                    <button style="width: auto; height: 48px; font-size: 14px;" type="submit" id="log-btn" class="btn">Авторизация</button>
+                </form>
+                <div class="social-links">
+                    <a href="#">
+                        <img src="img-reg/vk.png" height="30px" />
+                    </a>
+                    <a href="https://t.me/PitStopServisesBot">
+                        <img src="img-reg/telegram.png" height="30px" />
+                    </a>
+                    <a href="https://wa.me/qr/OGO3NNZSZJ6OM1">
+                        <img src="img-reg/whatsapp.png" height="30px" />
+                    </a>
+                </div>
+                <div class="tel">
+                    <a href="tel:+79600319417">+7 960 031 94 17</a>
+                </div>
+                <button a="" type="submit" id="contact-btn" class="btn">Заказать звонок</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <div class="reg">
+                <h1 style="text-decoration-line: underline; ; font-size: 36px; margin-bottom: 14px;margin-top: 10px;">Регистрация</h1>
+                <form action="/reg-in?task=user.login" method="post" class="form-validate"></form>
+                <div class="form-group">
+                    <label style="font-size: 26px; margin-bottom: 10px;" id="username-lbl" for="login" class="required invalid">Эль.почта</label>
+                    <input style="margin-bottom: 10px;" type="text" name="login" id="login" size="30" required="required" aria-required="true" autofocus aria-invalid="true">
+                </div>
+                <div class="form-group">
+                    <label style="font-size: 26px; margin-bottom: 10px;" id="password-lbl" for="password" class="required"> Пароль</label>
+                    <input style="margin-bottom: 10px;" type="password" name="password" id="password" size="30" maxlength="99" required="required" aria-required="true">
+                </div>
+                <div class="form-group">
+                    <button style="width: auto;" type="submit" class="btn" id="reg-btn"> Регистрация </button>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
